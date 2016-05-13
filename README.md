@@ -44,7 +44,7 @@ python -m unittest tests.test_csvc
 ## Benchmark
 
 ```
-python -m unittest bench.bench_csvc
+python -m bench.bench_csvc
 ```
 
 ## License
