@@ -32,7 +32,7 @@ tol = 1e-5
 clf_mdsvm = csvc.SVC(C=cost, kernel='rbf', max_iter=max_iter, gamma=gamma, tol=tol)
 
 clf_mdsvm.fit(x, y)
-print "Training Error: {}".format(clf_mdsvm.score(x, y))
+print "Training Accuracy: {}".format(clf_mdsvm.score(x, y))
 ```
 
 ## Test
@@ -46,3 +46,7 @@ python -m unittest tests.test_csvc
 ```
 python -m unittest bench.bench_csvc
 ```
+
+## License
+
+MIT
