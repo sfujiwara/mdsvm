@@ -1,7 +1,7 @@
 # MDSVM
 
 [![](https://circleci.com/gh/sfujiwara/mdsvm.png?style=shield&circle-token=1d1965541d4214f5f462e11dc341e1ab0a2904b6)](https://circleci.com/gh/sfujiwara/mdsvm)
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)]()
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 ## What is MDSVM?
 
