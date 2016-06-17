@@ -10,6 +10,12 @@
 MDSVM is an implementation of Support Vector Machines with minimal dependency to other software.
 Since it requires only [NumPy](http://www.numpy.org), it can work on various environments, for example [Google App Engine](https://cloud.google.com/appengine).
 
+## Installation
+
+```sh
+pip install git+https://github.com/sfujiwara/mdsvm
+```
+
 ## Basic Usage
 
 The usage is almost same as scikit-learn.

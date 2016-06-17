@@ -1,6 +1,10 @@
 machine:
   timezone: Asia/Tokyo
 
-test:
-  override:
-    - echo Hello Circle CI
+dependencies:
+  pre:
+    - pip install -r ./requirements.txt
+
+# test:
+#   override:
+#     - echo Hello Circle CI
