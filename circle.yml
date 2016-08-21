@@ -8,4 +8,4 @@ dependencies:
 test:
   override:
     - echo Hello Circle CI
-    - python -m unittest tests.test_csvc
+    - python -m unittest discover -v tests
