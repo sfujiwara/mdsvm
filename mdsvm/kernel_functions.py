@@ -4,8 +4,8 @@ import numpy as np
 
 
 def linear_kernel(x1, x2):
-    # x1 = np.atleast_2d(x1)
-    # x2 = np.atleast_2d(x2)
+    x1 = np.atleast_2d(x1)
+    x2 = np.atleast_2d(x2)
     return np.dot(x1, x2.T)
 
 
@@ -30,12 +30,11 @@ def get_rbf_kernel(gamma):
 # k(x1, x2) = (gamma<x1, x2> + coef0)^degree
 def get_polynomial_kernel(degree, coef0, gamma):
     def polynomial_kernel(x1, x2):
-        # x1 = np.atleast_2d(x1)
-        # x2 = np.atleast_2d(x2)
+        x1 = np.atleast_2d(x1)
+        x2 = np.atleast_2d(x2)
         kmat = np.dot(x1, x2.T)
         kmat *= gamma
         kmat += coef0
         kmat **= degree
         return kmat
-        # return (gamma * np.dot(x1, x2.T) + coef0)**degree
     return polynomial_kernel

@@ -31,5 +31,5 @@ class TestKernelFunctions(unittest.TestCase):
         # Compute kernel gram matrix
         linear_kernel_mdsvm = kernel_functions.linear_kernel
         kmat_mdsvm = linear_kernel_mdsvm(x, x[0])
-        kmat_sklearn = sklearn.metrics.pairwise.linear_kernel(x, x[0]).ravel()
+        kmat_sklearn = sklearn.metrics.pairwise.linear_kernel(x, x[0])
         np.testing.assert_almost_equal(kmat_mdsvm, kmat_sklearn, 5)

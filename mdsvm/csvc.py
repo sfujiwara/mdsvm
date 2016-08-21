@@ -25,6 +25,7 @@ class SVC:
         self._ind_y_p, self._ind_y_n = None, None
         self._i_low, self._i_up = None, None
         self.set_kernel_function(kernel)
+        self.coef_ = None
 
     def _init_solution(self, y):
         num = len(y)
@@ -156,17 +157,16 @@ class SVC:
 
     def to_dict(self):
         result = {
-            'type': 'CSVC',
-            'dualCoef': self.dual_coef_.tolist(),
-            'intercept': self.intercept_,
-            'supportVectors': self.support_vectors_.tolist(),
+            'type': 'C-SVC',
+            'dual_coef_': self.dual_coef_.tolist(),
+            "coef_": self.coef_,
+            'intercept_': self.intercept_,
+            'support_vectors_': self.support_vectors_.tolist(),
             'kernel': self.kernel,
             'tol': self.tol,
-            'hyperParameters': {
-                'C': self.C,
-                'gamma': self.gamma,
-                'coef0': self.coef0,
-                'degree': self.degree
-            }
+            'C': self.C,
+            'gamma': self.gamma,
+            'coef0': self.coef0,
+            'degree': self.degree
         }
         return result
