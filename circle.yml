@@ -3,9 +3,8 @@ machine:
 
 dependencies:
   pre:
-    - pip install -r ./requirements.txt
+    - pip install -r requirements.txt
 
 test:
   override:
-    - echo Hello Circle CI
     - python -m unittest discover -v tests

@@ -22,7 +22,7 @@ The usage is almost same as scikit-learn.
 
 ```python
 import numpy as np
-from mdsvm import csvc
+import mdsvm
 
 num_p = 100
 num_n = 100
@@ -38,7 +38,7 @@ gamma = 0.1
 max_iter = 2500
 tol = 1e-5
 
-clf_mdsvm = csvc.SVC(C=cost, kernel="rbf", max_iter=max_iter, gamma=gamma, tol=tol)
+clf_mdsvm = mdsvm.SVC(C=cost, kernel="rbf", max_iter=max_iter, gamma=gamma, tol=tol)
 
 clf_mdsvm.fit(x, y)
 print "Training Accuracy: {}".format(clf_mdsvm.score(x, y))
@@ -47,7 +47,7 @@ print "Training Accuracy: {}".format(clf_mdsvm.score(x, y))
 ## Test
 
 ```
-python -m unittest tests.test_csvc
+python -m unittest discover -v tests
 ```
 
 ## Benchmark
