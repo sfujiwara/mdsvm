@@ -47,7 +47,7 @@ print "Training Accuracy: {}".format(clf_mdsvm.score(x, y))
 ## Test
 
 ```
-python -m unittest tests.test_csvc
+python -m unittest discover -v tests
 ```
 
 ## Benchmark
