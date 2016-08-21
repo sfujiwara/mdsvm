@@ -17,7 +17,6 @@ class TestKernelFunctions(unittest.TestCase):
         x_p = np.random.multivariate_normal(np.ones(dim) * 1, np.eye(dim), num_p)
         x_n = np.random.multivariate_normal(np.ones(dim) * 2, np.eye(dim), num_n)
         x = np.vstack([x_p, x_n])
-        y = np.array([1.] * num_p + [-1.] * num_n)
 
         # Set parameters
         gamma = 0.01

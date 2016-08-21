@@ -53,5 +53,5 @@ python -m unittest discover -v tests
 ## Benchmark
 
 ```
-python -m bench.bench_csvc
+python -m benchmarks.bench_linear_kernel
 ```
